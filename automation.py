@@ -6,10 +6,10 @@ driver.get('https://www.instagram.com')
 
 time.sleep(1)
 emailButton = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input')
-emailButton.send_keys('whenwhatwhy1@gmail.com')
+emailButton.send_keys('put your instagram email here')
 
 passwordButton = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input')
-passwordButton.send_keys('Encrypted123')
+passwordButton.send_keys('put your instagram password here')
 
 loginButton = driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[3]/button/div')
 loginButton.click()
@@ -17,9 +17,6 @@ loginButton.click()
 time.sleep(2)
 notnowButton = driver.find_element_by_xpath('/html/body/div[4]/div/div/div/div[3]/button[2]')
 notnowButton.click()
-
-searchButton = driver.find_element_by_xpath('/html/body/div[1]/section/nav/div[2]/div/div/div[2]/input')
-searchButton.send_keys('cristiano')
 
 time.sleep(1)
 clickAccount = driver.find_element_by_xpath('/html/body/div[1]/section/nav/div[2]/div/div/div[2]/div[3]/div[2]/div/a[1]/div/div[2]/div/span')
